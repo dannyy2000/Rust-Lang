@@ -1,21 +1,21 @@
-fn main(){
-    // let s = String::from("hello");
-    // takes_ownership(&s);
-    // println!("{s}");
+// fn main(){
+//     // let s = String::from("hello");
+//     // takes_ownership(&s);
+//     // println!("{s}");
 
 
-    // let x = 5;
-    // makes_copy(x);
+//     // let x = 5;
+//     // makes_copy(x);
 
-    let mut s  = String::from("Hello");
+//     let mut s  = String::from("Hello");
 
-    let r1 = &mut s;
-    println!("{r1}");
-    let r2 = &mut s;
-     println!("{r2}");
+//     let r1 = &mut s;
+//     println!("{r1}");
+//     let r2 = &mut s;
+//      println!("{r2}");
 
     
-}
+// }
 
 
 
@@ -58,6 +58,20 @@ fn main(){
 
 //     give_string
 // }
+
+
+fn takes_ownership(s: &String) {
+    println!("{s}");
+    
+}
+
+fn main() {
+    let s = String::from("Rust");
+
+    takes_ownership(&s);
+
+    println!("{s}");
+}
 
 
 
